@@ -1,0 +1,13 @@
+The error message "Cannot declare endpoint, auth type, and secure values with pyflyte run command" suggests that there's an issue with your usage of the pyflyte run command in your Flyte application. This command is typically used to execute Flyte tasks or workflows and doesn't allow the declaration of endpoint, authentication type, or secure values directly. Here's how you can address this issue:
+
+Check Command Syntax: Ensure that you are using the pyflyte run command correctly. It should typically be used to run workflows or tasks without specifying endpoint or authentication details directly. The endpoint and authentication information is usually set up in your Flyte configuration.
+
+Check Configuration: In Flyte, endpoint and authentication information is typically defined in the configuration files. Ensure that you have configured your Flyte environment properly with the required endpoint, authentication type, and secure values.
+
+Use Secrets or Environment Variables: For sensitive information like authentication details, consider using environment variables or secrets management to provide these values securely. In Flyte, you can access these values within your tasks or workflows without exposing them in your command-line scripts.
+
+Consult Documentation: Review the documentation of the specific Flyte version you are using. Flyte may have evolved and introduced new command-line options or configurations that affect how you provide endpoint and authentication information.
+
+Debugging Logs: If you are still facing issues, check the error logs and debugging information provided by Flyte. These logs can often give you more insights into what might be causing the error.
+
+Community or Support: If the issue persists and you can't find a solution in the documentation or community resources, consider reaching out to the Flyte community or support for assistance. They might be able to provide specific guidance based on your Flyte version and use case.
